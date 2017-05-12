@@ -20,6 +20,6 @@ app.use(bodyParser.json());
 app.use('/assets',express.static('assets'));
 app.use('/', router);
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
   console.log('Science!')
 });
